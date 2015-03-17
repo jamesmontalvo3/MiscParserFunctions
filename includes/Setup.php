@@ -25,6 +25,9 @@ class Setup {
 		$count = new Count( $parser );
 		$count->setupParserFunction();
 
+		$imageList = new ImageList( $parser );
+		$imageList->setupParserFunction();
+
 		// always return true
 		return true;
 

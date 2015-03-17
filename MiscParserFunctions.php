@@ -38,6 +38,7 @@ $GLOBALS['wgAutoloadClasses']['MiscParserFunctions\Setup'] = __DIR__ . '/include
 // Autoload for each parser function
 $GLOBALS['wgAutoloadClasses']['MiscParserFunctions\Trim'] = __DIR__ . '/includes/Trim.php';
 $GLOBALS['wgAutoloadClasses']['MiscParserFunctions\Count'] = __DIR__ . '/includes/Count.php';
+$GLOBALS['wgAutoloadClasses']['MiscParserFunctions\ImageList'] = __DIR__ . '/includes/ImageList.php';
 
 // Setup parser functions
 $GLOBALS['wgHooks']['ParserFirstCallInit'][] = 'MiscParserFunctions\Setup::setupParserFunctions';

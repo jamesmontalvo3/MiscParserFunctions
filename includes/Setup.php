@@ -6,7 +6,7 @@
  * @copyright © 2014 by James Montalvo
  * @licence GNU GPL v3+
  */
- 
+
 namespace MiscParserFunctions;
 
 class Setup {
@@ -18,7 +18,7 @@ class Setup {
 	* @return bool true in all cases
 	*/
 	static function setupParserFunctions ( &$parser ) {
-			
+
 		$trim = new Trim( $parser );
 		$trim->setupParserFunction();
 
@@ -27,6 +27,9 @@ class Setup {
 
 		$imageList = new ImageList( $parser );
 		$imageList->setupParserFunction();
+
+		$diff3 = new Diff3( $parser );
+		$diff3->setupParserFunction();
 
 		// always return true
 		return true;

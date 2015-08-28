@@ -1,8 +1,8 @@
 <?php
-/** 
+/**
  * The MeetingMinutes extension provides JS and CSS to enable recording meeting
  * minutes in SMW. See README.md.
- * 
+ *
  * Documentation: https://github.com/enterprisemediawiki/MeetingMinutes
  * Support:       https://github.com/enterprisemediawiki/MeetingMinutes
  * Source code:   https://github.com/enterprisemediawiki/MeetingMinutes
@@ -26,7 +26,7 @@ $GLOBALS['wgExtensionCredits']['parserhook'][] = array(
 	'url'            => 'http://github.com/jamesmontalvo3/MiscParserFunctions',
 	'author'         => 'James Montalvo',
 	'descriptionmsg' => 'miscparserfunctions-desc',
-	'version'        => '0.1.0'
+	'version'        => '0.1.1'
 );
 
 $GLOBALS['wgMessagesDirs']['MiscParserFunctions'] = __DIR__ . '/i18n';
@@ -39,6 +39,7 @@ $GLOBALS['wgAutoloadClasses']['MiscParserFunctions\Setup'] = __DIR__ . '/include
 $GLOBALS['wgAutoloadClasses']['MiscParserFunctions\Trim'] = __DIR__ . '/includes/Trim.php';
 $GLOBALS['wgAutoloadClasses']['MiscParserFunctions\Count'] = __DIR__ . '/includes/Count.php';
 $GLOBALS['wgAutoloadClasses']['MiscParserFunctions\ImageList'] = __DIR__ . '/includes/ImageList.php';
+$GLOBALS['wgAutoloadClasses']['MiscParserFunctions\Diff3'] = __DIR__ . '/includes/Diff3.php';
 
 // Setup parser functions
 $GLOBALS['wgHooks']['ParserFirstCallInit'][] = 'MiscParserFunctions\Setup::setupParserFunctions';
